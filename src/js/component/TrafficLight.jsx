@@ -1,17 +1,16 @@
 import React, { useState } from "react"
 export default function TrafficLight() {
-    const [button, setButton] = useState()
+    const [color, setcolor] = useState()
     const theButton = (color) => {
-        setButton(color);
-        console.log(color) 
+        setcolor(color);
     }
-   
-return (
+
+    return (
         <div >
             <div className="d-flex flex-column align-items-center bg-dark w-25">
-                <button onClick={() => theButton("red")} className={`btn btn-danger p-5 rounded-circle ${button === "red" ? "luz" : ""}`}></button>
-                <button onClick={() => theButton("yellow")} className={`btn btn-warning p-5 rounded-circle ${button === "yellow" ? "luz" : ""}`} ></button>
-                <button onClick={() => theButton("green")} className={`btn btn-success p-5 rounded-circle ${button === "green" ? "luz" : ""}`}></button>
+                <button onClick={() => theButton("red")} className={`btn btn-danger p-5 rounded-circle ${color === "red" ? "luz" : ""}`}></button>
+                <button onClick={() => theButton("yellow")} className={`btn btn-warning p-5 rounded-circle ${color === "yellow" ? "luz" : ""}`} ></button>
+                <button onClick={() => theButton("green")} className={`btn btn-success p-5 rounded-circle ${color === "green" ? "luz" : ""}`}></button>
             </div>
 
             <div className="prueba"></div>
