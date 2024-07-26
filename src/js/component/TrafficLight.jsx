@@ -13,7 +13,6 @@ export default function TrafficLight() {
                 <button onClick={() => theButton("green")} className={`btn btn-success p-5 rounded-circle ${color === "green" ? "luz" : ""}`}></button>
             </div>
 
-            <div className="prueba"></div>
         </div>
     )
 };

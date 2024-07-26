@@ -1,5 +1,5 @@
 .luz {
-  box-shadow: 0 0 15px rgb(255, 255, 255); /* Luz blanca */
-  transform: scale(1.1); /* Agrandar el botón un poco */
-  transition: all 0.2s ease -in -out; /* Suavizar la transición */
+  box-shadow: 0 0 15px rgb(255, 255, 255); 
+  transform: scale(1.1); 
+  transition: all 0.2s ease -in -out;
 }
